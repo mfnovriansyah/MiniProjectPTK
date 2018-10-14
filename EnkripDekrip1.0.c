@@ -47,7 +47,7 @@ void DekripsiAscii() // fungsi dekripsi nilai Ascii
 	fgets(string,100,stdin); // memeriksa inputan yang akan di enkripsi
 	for(i = 0; (i < 100 && string[i] != '\0'); i++) //string akan disimpan sampai string jika kurang dari 100 dan tidak null(\0)
 	{
-		string[i] = string[i] - 3; //the key for encryption is 3 that is subtracted to ASCII value
+		string[i] = string[i] - 5; //the key for encryption is 3 that is subtracted to ASCII value
 	}
 	printf("\n\tHasil Dekripsi: %s\n", string);
 	system("pause"); // mendelay program sampai ada inputan
@@ -60,7 +60,7 @@ int EnkripsiAscii() // fungsi enkripsi nilai Ascii
 	fgets(string,100,stdin); // memeriksa inputan yang akan di enkripsi
 	for(i = 0; (i < 100 && string[i] != '\0'); i++) // string akan disimpan sampai string jika kurang dari 100 dan tidak null(\0)
 	{
-		string[i] = string[i] + 3; //the key for encryption is 3 that is added to ASCII value
+		string[i] = string[i] + 5; //the key for encryption is 3 that is added to ASCII value
 	}
 	printf("\n\tHasil Dekripsi: %s\n", string);
 	hasilenkripsi = fopen ("hasilenkripsi.txt", "w");  // membuka file hasilenkripsi.txt jika tidak ada maka membuatnya "w"
